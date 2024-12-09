@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
      <style>
         /* Styles de navigation */
         nav {
@@ -51,6 +52,7 @@
             color: #E63946;
             margin-top: 30px;
             margin-bottom: 20px;
+             flex: 1;
         }
 
         h2 {
@@ -97,6 +99,14 @@ ul {
             margin-right: 15px;
         }
 
+   footer {
+    margin-top: auto; /* Pousse le footer en bas */
+    padding: 20px;
+    background-color: #F1FAEE;
+    color: #1D3557;
+    font-size: 1em;
+    text-align: center;
+}
     </style>
 </head>
 <body>
@@ -115,7 +125,7 @@ ul {
    <h2>Espèces uniquement. Pas de rendu de monnaie 😊</h2>
 
 
-   <h1>Où ?</h1>
+   <h1>Où ?<i class="fas fa-map-marker-alt"></i></h1>
    <h2>Collège Cassignol, des panneaux seront affichés
 </h2>
 
@@ -136,10 +146,20 @@ ul {
   <li><strong>Et bien d'autres proposés uniquement jeudi 12 décembre</strong></li>
 </ul>
 
+    <footer style="background-color: #F1FAEE; padding: 20px; margin-top: 30px; color: #1D3557; font-size: 1em;">
+    Merci pour votre soutien aux latinistes ! 😊
+</footer>
+
+    <button onclick="scrollToTop()" style="margin: 20px; padding: 10px 20px; font-size: 1em; background-color: #E63946; color: white; border: none; border-radius: 10px; cursor: pointer;">Remonter en haut</button>
+    
 <script>
     window.onload = function() {
         window.scrollTo(0, 0);  // Cette ligne remet la page en haut au chargement
     };
+
+    function scrollToTop() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }
 </script>
 
 </body>
